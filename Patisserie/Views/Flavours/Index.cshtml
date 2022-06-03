@@ -1,3 +1,15 @@
 @{
-    ViewData["Title"] = "Flavours Central";
+    Layout = "_Layout";
 }
+@using Patisserie.Models;
+
+<h1>Flavours</h1>
+
+<ul>
+    @foreach(Flavour flavour in Model)
+    {
+        <li>@Html.ActionLink($"{flavour.Name}", "Details", new { id = flavour.FlavourId })</li>
+    }
+</ul>
+
+<p>@Html.ActionLink("Add a new flavour", "Create")</p>

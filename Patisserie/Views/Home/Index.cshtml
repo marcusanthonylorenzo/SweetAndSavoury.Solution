@@ -5,3 +5,18 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
 </div>
+@{
+    Layout = "_Layout";
+}
+@using Patisserie.Models;
+
+<h1>Welcome to Pierre's Patisserie</h1>
+<ul>
+    @foreach(Flavour flavour in ViewBag.Flavours)
+    {
+        <li>@Html.ActionLink($"{flavour.Name}", "Details", new { id = flavour.FlavourId })</li>
+    }
+</ul>
+
+<p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
+<p>@Html.ActionLink("Create an account", "Index", "Account")</p>

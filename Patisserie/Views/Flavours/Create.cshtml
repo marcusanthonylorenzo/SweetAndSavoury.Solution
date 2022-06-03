@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Patisserie.Models
+@model Patisserie.Models.Flavour
+
+@using (Html.BeginForm())
+{
+  <h3>Add a New Flavor</h3>
+
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name, new { placeholder = "Name of flavour here.", @class = "form-control" })
+
+    <input type="submit" class="btn" value="Add New Flavor" />
+
+}
