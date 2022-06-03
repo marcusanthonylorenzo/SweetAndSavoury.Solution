@@ -29,6 +29,8 @@
 
 **Notes**
 - `dotnet new mvc` was used as a boilerplate and has extra code that conflicts if removed. It allowed me to focus on the MVP at the cost of excess code.
+- Not able to change top-level directory name to `Patisserie.Solution`.
+- Although there is small UI animation, the page is not responsive for anything other than a standard monitor/browser size.
 
 ---
 
