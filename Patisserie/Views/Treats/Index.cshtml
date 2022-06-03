@@ -1,0 +1,15 @@
+@{
+    Layout = "_Layout";
+}
+@using Patisserie.Models;
+
+<h1>Treats</h1>
+
+<ul>
+    @foreach(Treat treat in Model)
+    {
+        <li>@Html.ActionLink($"{treat.Name}", "Details", new { id = treat.TreatId })</li>
+    }
+</ul>
+
+<p>@Html.ActionLink("Add a new treat", "Create")</p>

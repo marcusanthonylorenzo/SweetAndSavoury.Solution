@@ -7,7 +7,7 @@
 
 <h2>Flavor Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayNameFor(model => model.Name): <span id="details-name" style="color: crimson;">@Html.DisplayFor(model => model.Name)</span></h3>
 
 @if(@Model.JoinEntities.Count == 0)
 {

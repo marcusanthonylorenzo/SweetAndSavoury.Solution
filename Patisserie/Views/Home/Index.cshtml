@@ -13,29 +13,35 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    <section class="log-off-section">
-        <p>You're logged in as: @User.Identity.Name!</p>
+    <section class="home-content">
+        
+        <div class="home-content-flavours">
 
-        @using (Html.BeginForm("LogOff", "Account"))
-        {
-            <input type="submit" class="btn btn-default" value="Log out" />
-        }
+            <ul><h2>View Flavours</h2>
+                @foreach(Flavour flavour in ViewBag.Flavours)
+                {
+                    <li>@Html.ActionLink($"{flavour.Name}", "Details", "Flavours", new { id = flavour.FlavourId })</li>
+                }
+            </ul>
+
+        </div>
+
+        <div class="home-content-treats">
+
+            <ul><h2>View Treats</h2>
+                @foreach(Treat treat in ViewBag.Treats)
+                {
+                    <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new { id = treat.TreatId })</li>
+                }
+                
+            </ul>
+
+        </div>
+
     </section>
 
-    <h2>View Flavours</h2>
-    
-    <ul>
-        @foreach(Flavour flavour in ViewBag.Flavours)
-        {
-            <li>@Html.ActionLink($"{flavour.Name}", "Details", "Flavours", new { id = flavour.FlavourId })</li>
-        }
-    </ul>
-
-
-    //create two side-by-side lists to view all flavours and treats together
-
     <p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
-
+    <p>@Html.ActionLink("Add a new treat", "Create", "Treats")</p>
 
 }
 else
@@ -45,6 +51,6 @@ else
 
     <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
 
-    <p>@Html.ActionLink("Register", "Register")</p>
+    <p>@Html.ActionLink("Register", "Register", "Account")</p>
     <p>@Html.ActionLink("Log in", "Login", "Account")</p>
 }
