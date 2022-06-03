@@ -9,7 +9,7 @@ using Patisserie.Models;
 namespace Patisserie.Migrations
 {
     [DbContext(typeof(PatisserieContext))]
-    [Migration("20220603163213_Initial")]
+    [Migration("20220603204237_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

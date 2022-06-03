@@ -50,14 +50,16 @@ namespace Patisserie.Controllers
     public ActionResult Edit(int id)
     {
       var thisFlavour = _db.Flavours.FirstOrDefault(flavour => flavour.FlavourId == id);
-      ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "TreatName");
+      ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "Name");
+
       return View(thisFlavour);
     }
 
     [HttpPost]
-    public ActionResult Edit(Flavour flavour)
+    public ActionResult Edit(Flavour flavour, int treatId)
     {
       _db.Entry(flavour).State = EntityState.Modified;
+      _db.FlavourTreat.Add(new FlavourTreat() { TreatId = treatId, FlavourId = flavour.FlavourId });
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Patisserie.Models.Treat
+
+@using (Html.BeginForm())
+{
+  <h2>Confirm Deletion</h2>
+
+  @Html.HiddenFor(model => model.TreatId)
+
+  <h3>Are you sure you want to delete <span style="color: red;">@Html.DisplayFor(model => model.Name)</span> ?</h3>
+
+  <input type="submit" class="btn" value="Delete" />
+}

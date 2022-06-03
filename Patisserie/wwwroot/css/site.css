@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(248, 248, 248, 0.99);
 }
 
 /*** Marcus Custom Nav CSS Here ***/
