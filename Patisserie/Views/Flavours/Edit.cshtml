@@ -13,6 +13,11 @@
   @Html.LabelFor(model => model.Name)
   @Html.EditorFor(model => model.Name)
 
+
+  @Html.Label("Select treat to incorporate.")
+  @Html.DropDownList("TreatId", (IEnumerable<SelectListItem>)ViewBag.TreatId, "Select Treat", new { @class = "form-control" })
+
+
   <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to Flavours", "Index")</p>

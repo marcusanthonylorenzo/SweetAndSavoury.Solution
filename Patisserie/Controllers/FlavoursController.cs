@@ -50,7 +50,7 @@ namespace Patisserie.Controllers
     public ActionResult Edit(int id)
     {
       var thisFlavour = _db.Flavours.FirstOrDefault(flavour => flavour.FlavourId == id);
-      ViewBag.FlavorId = new SelectList(_db.Treats, "TreatId", "TreatName");
+      ViewBag.TreatId = new SelectList(_db.Treats, "TreatId", "TreatName");
       return View(thisFlavour);
     }
 
