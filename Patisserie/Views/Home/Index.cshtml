@@ -10,13 +10,32 @@
 }
 @using Patisserie.Models;
 
-<h1>Welcome to Pierre's Patisserie</h1>
-<ul>
-    @foreach(Flavour flavour in ViewBag.Flavours)
-    {
-        <li>@Html.ActionLink($"{flavour.Name}", "Details", new { id = flavour.FlavourId })</li>
-    }
-</ul>
 
-<p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
-<p>@Html.ActionLink("Create an account", "Index", "Account")</p>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Hello @User.Identity.Name!</p>
+    @using (Html.BeginForm("LogOff", "Account"))
+    {
+        <input type="submit" class="btn btn-default" value="Log out" />
+    }
+
+    <h2>View Flavours</h2>
+    <ul>
+        @foreach(Flavour flavour in ViewBag.Flavours)
+        {
+            <li>@Html.ActionLink($"{flavour.Name}", "Details", new { id = flavour.FlavourId })</li>
+        }
+    </ul>
+
+
+    //create two side-by-side lists to view all flavours and treats together
+
+    <p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
+
+
+}
+else
+{
+    <p>@Html.ActionLink("Register", "Register")</p>
+    <p>@Html.ActionLink("Log in", "Login", "Account")</p>
+}
