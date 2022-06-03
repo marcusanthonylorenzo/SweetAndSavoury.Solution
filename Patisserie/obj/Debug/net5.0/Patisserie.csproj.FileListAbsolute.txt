@@ -59,3 +59,4 @@ C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Raz
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Treats\Index.cshtml.g.cs
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Treats\Details.cshtml.g.cs
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Treats\Delete.cshtml.g.cs
+C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Treats\Edit.cshtml.g.cs

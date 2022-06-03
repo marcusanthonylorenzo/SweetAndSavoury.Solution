@@ -15689,6 +15689,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Treats\\Edit.cshtml",
+      "TargetPath": "Views\\Treats\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Flavours\\Details.cshtml",
       "TargetPath": "Views\\Flavours\\Details.cshtml",
       "FileKind": "mvc"
