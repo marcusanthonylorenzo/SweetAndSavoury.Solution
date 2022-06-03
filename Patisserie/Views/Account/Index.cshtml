@@ -2,8 +2,6 @@
   Layout = "_Layout";
 }
 
-@using System.Security.Claims
-
 @if (User.Identity.IsAuthenticated)
 {
     <h3>You've logged in as: @User.Identity.Name!</h3>
