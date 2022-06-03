@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
 html {
   font-size: 14px;
+  font-family: "Raleway";
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
+
+  body {
+    margin-bottom: 60px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 html {
@@ -15,4 +28,81 @@ html {
 
 body {
   margin-bottom: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*** Marcus Custom Nav CSS Here ***/
+
+.container {
+  background-color: rgba(130, 217, 228, 0.304);
+  padding: 5vh;
+  margin: 2vh;
+  border: 1px solid;
+  box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
+}
+
+.container-fluid, .container-fluid * {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  align-items: center;
+}
+
+.container-fluid a {
+  background-color: rgba(130, 217, 228, 0.604);
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 2rem 2rem;
+  border: 1px solid rgba(104, 78, 78, 0.637);
+  box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
+}
+
+.container-fluid a:hover {
+  background-color: rgba(158, 206, 213, 0.304);
+}
+
+/*** Custom Log Out Section ***/
+
+.log-off-section{
+  background-color: rgba(247, 252, 253, 0.935);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 2vh;
+  margin: 2vh;
+  border-radius: 2rem 2rem;
+  box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
+}
+
+/*** main content "pb-3" ***/
+
+.pb-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh;
+}
+
+.pb-3 li {
+  background-color: rgba(247, 252, 253, 0.935);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 3px;
+  height: 0.4rem;
+  border-radius: 2rem 2rem;
+  box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
+}
+
+/*** footer ***/
+
+.footer{
+  position: fixed;
+  bottom: 0;
 }

@@ -13,13 +13,17 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    <p>Hello @User.Identity.Name!</p>
-    @using (Html.BeginForm("LogOff", "Account"))
-    {
-        <input type="submit" class="btn btn-default" value="Log out" />
-    }
+    <section class="log-off-section">
+        <p>You're logged in as: @User.Identity.Name!</p>
+
+        @using (Html.BeginForm("LogOff", "Account"))
+        {
+            <input type="submit" class="btn btn-default" value="Log out" />
+        }
+    </section>
 
     <h2>View Flavours</h2>
+    
     <ul>
         @foreach(Flavour flavour in ViewBag.Flavours)
         {
@@ -36,6 +40,11 @@
 }
 else
 {
+
+    <h1>Please log-in or register to continue.</h1>
+
+    <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
+
     <p>@Html.ActionLink("Register", "Register")</p>
     <p>@Html.ActionLink("Log in", "Login", "Account")</p>
 }
