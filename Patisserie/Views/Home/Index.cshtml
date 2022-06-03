@@ -23,7 +23,7 @@
     <ul>
         @foreach(Flavour flavour in ViewBag.Flavours)
         {
-            <li>@Html.ActionLink($"{flavour.Name}", "Details", new { id = flavour.FlavourId })</li>
+            <li>@Html.ActionLink($"{flavour.Name}", "Details", "Flavours", new { id = flavour.FlavourId })</li>
         }
     </ul>
 

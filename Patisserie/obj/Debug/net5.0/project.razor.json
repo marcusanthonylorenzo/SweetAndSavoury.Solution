@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Flavours\\Delete.cshtml",
+      "TargetPath": "Views\\Flavours\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Account\\Index.cshtml",
       "TargetPath": "Views\\Account\\Index.cshtml",
       "FileKind": "mvc"
@@ -15649,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Flavours\\Edit.cshtml",
+      "TargetPath": "Views\\Flavours\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Account\\Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"
@@ -15656,6 +15666,11 @@
     {
       "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Shared\\_ViewImports.cshtml",
       "TargetPath": "Views\\Shared\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Views\\Flavours\\Details.cshtml",
+      "TargetPath": "Views\\Flavours\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

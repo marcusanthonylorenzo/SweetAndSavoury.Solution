@@ -52,3 +52,6 @@ C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Raz
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Shared\_ViewImports.cshtml.g.cs
+C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Flavours\Details.cshtml.g.cs
+C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Flavours\Edit.cshtml.g.cs
+C:\Users\Marcus\Desktop\SweetAndSavoury.Solution\Patisserie\obj\Debug\net5.0\Razor\Views\Flavours\Delete.cshtml.g.cs
