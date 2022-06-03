@@ -40,7 +40,7 @@ body {
 
 .container {
   background-color: rgba(130, 217, 228, 0.304);
-  padding: 5vh;
+  padding: 4vh;
   margin: 2vh;
   border: 1px solid;
   box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
@@ -120,6 +120,12 @@ body {
 }
 
 /*** footer ***/
+
+.home-content-innerfooter {
+  display: flex;
+  position: relative;
+  gap: 5rem;
+}
 
 .footer{
   position: fixed;
