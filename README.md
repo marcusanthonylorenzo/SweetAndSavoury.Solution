@@ -8,14 +8,17 @@
 
 ### Using a **Many-To-Many** relationship to display data, with **user authentication** via login.
 
-![Screenshot 2022-06-03 145624](https://user-images.githubusercontent.com/100096239/171962454-4d920542-bfe9-4e66-9f60-7c38366a8769.jpg)
+![Home-Page-Patiesserie-Database-Google-Chrome-2022-06-13-22-08-40 (1)](https://user-images.githubusercontent.com/100096239/173498907-2f1ab9c9-9366-4eba-8ef0-2552c59e0f78.gif)
+
 
 #### Technologies Used:
 ![image](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![image](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![image](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
+* including: ASP.NET 5 MVC, VSCode
 ---
 
 
