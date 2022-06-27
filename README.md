@@ -6,7 +6,8 @@
 | **_Overview_:** |
 |---|
 
-### Using a **Many-To-Many** relationship to display data, with **user authentication** via login.
+### User Auth required, Many-to-Many Tables in SQL database, entries list on webpage and can be CRUD individually.
+
 
 ![Home-Page-Patiesserie-Database-Google-Chrome-2022-06-13-22-08-40 (1)](https://user-images.githubusercontent.com/100096239/173498907-2f1ab9c9-9366-4eba-8ef0-2552c59e0f78.gif)
 
