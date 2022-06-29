@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Rasa:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500;600&display=swap');
+
 
 html {
   font-size: 14px;
-  font-family: "Raleway";
+  font-family: "Georama";
 }
 
 @media (min-width: 768px) {
@@ -15,8 +18,9 @@ html {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    opacity: 90%;
   }
 
 }
@@ -33,11 +37,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(248, 248, 248, 0.99);
+  background-color: rgba(255, 255, 255, 0.99);
+  background-image: url('https://cdn3.vectorstock.com/i/1000x1000/99/97/cute-pastel-cupcakes-pattern-simple-muffin-vector-34719997.jpg');
+  background-size: cover;
+  opacity: 99%;
 }
 
+
 a {
+  display: block;
   text-decoration: none;
+  color:rgb(2, 8, 9);
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -46,12 +61,49 @@ li {
 
 /*** Marcus Custom Nav CSS Here ***/
 
+.fit {
+  display: flex;
+  margin: 0 auto;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.columnized {
+  display: flex;
+  flex-direction: column;
+  margin: 3% auto;
+}
+
+.columnized-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 3% 0;
+  margin-left: 0;
+  margin-right: 20vw;
+}
+
+
+.bevelled {
+  border-radius: 60px 60px;
+}
+
 .container {
-  background-color: rgba(130, 217, 228, 0.304);
+  background-color: rgb(192, 229, 255);
   padding: 4vh;
   margin: 2vh;
-  border: 1px solid;
-  box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
+  margin-top: 5vh;
+  border: 1px solid rgba(104, 78, 78, 0.3);
+  box-shadow: 1px 2px 3px 1px rgba(104, 78, 78, 0.35);
+  border-radius: 25px;
+  transform: scale(1.1);
+  width: 20vw;
 }
 
 .container-fluid, .container-fluid * {
@@ -65,20 +117,23 @@ li {
   padding: 0;
 }
 
+
+
+
 /*** Nav "Buttons" ***/
 
 .container-fluid a {
-  background-color: rgba(130, 217, 228, 0.604);
+  background-color: rgb(192, 229, 255);
   padding: 2rem;
   text-decoration: none;
   border-radius: 2rem 2rem;
-  border: 1px solid rgba(104, 78, 78, 0.637);
+  border: none;
   box-shadow: 0 1px 1px 1px rgba(104, 78, 78, 0.3);
 }
 
 .container-fluid a:hover {
   display: block;
-  background-color: rgba(158, 206, 213, 0.304);
+  background-color: rgba(244, 188, 240, 0.804);
 }
 
 /*** Log-Out "Button" ***/
@@ -98,18 +153,33 @@ li {
 
 /*** main content "pb-3" ***/
 
+.text{
+  margin: 0 auto;
+  color:rgba(166, 46, 236, 0.983);
+  background-color: rgba(255, 248, 215, 1);
+  border-radius: 2rem;
+  box-shadow: 1px 1px 1px 1px inset rgba(104, 78, 78, 0.2);
+  padding: 2%;
+}
+
+.text h1 {
+  margin: 5% auto;
+  font-size: 3rem;
+}
+
 .pb-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vh;
+  margin: 1vh;
+  width: 88%;
 }
 
 .pb-3 li a {
-  background-color: rgba(247, 252, 253, 0.935);
+  background-color: white;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 1rem;
   margin: 3px;
   height: 0.4rem;
@@ -118,27 +188,56 @@ li {
 }
 
 .pb-3 li a:hover {
-  background-color: rgba(216, 216, 216, 0.804);
+  background-color: rgba(244, 188, 240, 0.804);
   transform: translateX(0.5rem);
   transition: 80ms ease-out;
   cursor: pointer;
   /* color: rgb(254, 254, 254); */
 }
 
-.home-content {
-  display: flex;
+.home {
+  height: 12vh;
 }
+
+.home h2 {
+  margin-bottom: 0;
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 
 .home-content section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
 }
 
-/* .home-content div ul a{
-  display:block;
-} */
+.home-content div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 0 auto;
+
+  background-color:rgba(255, 248, 215, 1);
+  border-radius: 20px;
+  box-shadow: 0px 1px 1px 1px rgba(52, 52, 50, 0.6);
+}
+
+.home-content div {
+  /* display: flex;
+  align-items: top; */
+  height: 50%;
+  width: 40vw;
+  /* justify-content: flex-start; */
+}
 
 /*** footer ***/
 
@@ -151,4 +250,127 @@ li {
 .footer{
   position: fixed;
   bottom: 0;
+}
+
+
+/*** REGISTER USER ***/
+
+input {
+  border-radius: 60px 60px;
+  border: 1px solid rgba(104, 78, 78, 0.5);
+  box-shadow: 1px 2px 3px 0px inset rgba(104, 78, 78, 0.3);
+  padding: 1%;
+}
+
+input:focus {
+  outline: none;
+  opacity: 80%;
+}
+
+.register-form {
+  border-radius: 60px 60px;
+}
+
+.register-form h2 {
+  font-size: 1.7rem;
+}
+
+.form {
+  width: 50%;
+}
+
+form > input {
+  margin: 1% auto;
+  height: 1.9rem;
+  width: 100%;
+  padding: 1% 5%;
+}
+
+form > label {
+  margin: 4%;
+}
+
+button {
+  display: block;
+  background-color: rgb(255, 248, 215);
+}
+
+.btn, .btn-default{
+  border-radius: 15px;
+  border: 1px solid rgba(50, 50, 50, 0.4);
+  box-shadow: 0 1px 2px 1px rgba(104, 78, 78, 0.5);
+  margin: 3% auto;
+  height: 3rem;
+  width: 109%;
+}
+
+.btn a {
+  display: block;
+  color:rgba(50, 50, 50, 0.9);
+  font-weight: 600;
+  align-items: center;
+  padding-top: 5%;
+  height: 100%;
+  margin: 0;
+}
+
+.add {
+  width: 30%;
+  margin: 2% auto;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(244, 188, 240, 0.804);
+}
+
+.acc {
+  width: 20%;
+  margin: 1% auto;
+}
+
+.add a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(192, 229, 255);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.log-off-section a:hover {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(244, 188, 240, 0.804);
+  width: 100%;
+  color: rgb(253, 253, 253);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: center;
+  background-color: rgb(255, 226, 253);
+  height: 30vh;
+  width: 40vw;
+  border-radius: 20px;
+  margin: 3%;
+}
+
+.details a, .details ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#details-name {
+  color: rgba(64, 74, 116, 0.983);
 }

@@ -21,11 +21,15 @@
                             <li class="nav-item">
                                 <section class="log-off-section">
                                     
-                                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Patisserie Database - Home</a>
+                                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">Account</a>
 
-                                    <p>You're logged in as: @User.Identity.Name!</p>
+                                    <div class="logged columnized">
+
+                                        <p>Log-in: @User.Identity.Name</p>
+
+                                    </div>
 
                                     @using (Html.BeginForm("LogOff", "Account"))
                                     {
@@ -49,17 +53,39 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Pierre's Patisserie LLC
-        </div>
-    </footer>
+        
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <div class="container columnized">
+
+                <main role="main centered" class="pb-3">
+                    @RenderBody()
+                </main>
+
+            </div>
+
+        }
+        else
+        {
+            <div class=" pb-3 main-loggedin">
+
+                @RenderBody()
+
+            </div>
+            
+        }
+
+        @if (!User.Identity.IsAuthenticated)
+        {
+                <footer class="border-top footer text-muted">
+                    <div class="container">
+                        &copy; 2022 - Marcus Lorenzo
+                    </div>
+                </footer>
+
+        }
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

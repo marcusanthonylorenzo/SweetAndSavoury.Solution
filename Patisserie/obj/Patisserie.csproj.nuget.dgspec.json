@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj": {}
+    "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj": {
+    "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
+        "projectUniqueName": "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
         "projectName": "Patisserie",
-        "projectPath": "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
+        "projectPath": "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
         "packagesPath": "C:\\Users\\Marcus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\obj\\",
+        "outputPath": "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

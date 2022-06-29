@@ -5,13 +5,19 @@
 
 @model Patisserie.Models.Flavour
 
-<h2>Flavor Details</h2>
-<hr />
-<h3>@Html.DisplayNameFor(model => model.Name): <span id="details-name" style="color: crimson;">@Html.DisplayFor(model => model.Name)</span></h3>
+<h2 class="text">Flavor Details</h2>
+
+<div class="details">
+
+  <h3>@Html.DisplayNameFor(model => model.Name): <span id="details-name">
+      @Html.DisplayFor(model => model.Name)</span></h3> 
+  
+
+
 
 @if(@Model.JoinEntities.Count == 0)
 {
-    <p>There are no treats incorporating this particular flavour.</p>
+     <h2>There are no treats incorporating this particular flavour.</h2>
 }
 else
 {
@@ -26,8 +32,10 @@ else
     </ul> 
 }
 
+
+</div>
 <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
 
-<p>@Html.ActionLink("Edit Flavour", "Edit", new { id = Model.FlavourId })</p>
-<p>@Html.ActionLink("Delete Flavour", "Delete", new { id = Model.FlavourId })</p>
-<p>@Html.ActionLink("Back to Flavor List", "Index")</p>
+ <button class="btn acc">@Html.ActionLink("Edit Flavour", "Edit", new { id = Model.FlavourId })</button>
+ <button class="btn acc">@Html.ActionLink("Delete Flavour", "Delete", new { id = Model.FlavourId })</button>
+ <button class="btn acc">@Html.ActionLink("Back to Flavor List", "Index")</button>

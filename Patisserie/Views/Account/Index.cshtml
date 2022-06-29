@@ -4,17 +4,21 @@
 
 @if (User.Identity.IsAuthenticated)
 {
-    <h3>You've logged in as: @User.Identity.Name!</h3>
-    @using (Html.BeginForm("LogOff", "Account"))
+    <div class="text columnized">
+
+      <h3>You've logged in as: @User.Identity.Name!</h3>
+
+    </div>
+    @* @using (Html.BeginForm("LogOff", "Account"))
     {
         <input type="submit" class="btn btn-default" value="Log out" />
     }
-    
+     *@
     <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
 
-    <p>@Html.ActionLink("Home", "Index", "Home")</p>
-    <p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
-    <p>@Html.ActionLink("Add a new treat", "Create", "Treats")</p>
+    <button class="btn acc">@Html.ActionLink("Home", "Index", "Home")</button>
+    <button class="btn acc">@Html.ActionLink("Add a new flavour", "Create", "Flavours")</button>
+    <button class="btn acc">@Html.ActionLink("Add a new treat", "Create", "Treats")</button>
 
 }
 else
@@ -24,7 +28,7 @@ else
 
     <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
     
-    <p>@Html.ActionLink("Register", "Register")</p>
-    <p>@Html.ActionLink("Log in", "Login")</p>
-    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+    <button class="btn acc">@Html.ActionLink("Register", "Register")</button>
+    <button class="btn acc">@Html.ActionLink("Log in", "Login")</button>
+    <button class="btn acc">@Html.ActionLink("Home", "Index", "Home")</button>
 }

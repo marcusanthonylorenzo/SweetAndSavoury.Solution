@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JodMbnpqJef0zuN/9MMjPDKBb4F162ImpVrDc9e+aL6PECJasrBMpNv6HYAGjwkuuyUCDfOnOSBwMUUv/GRHwQ==",
+  "dgSpecHash": "BZrbvKlWppB1CH4cDAKFh2woVShAudB5rAtIJD5S8ZqLdcjFXQn9tnfhDlAj+ZbVIMJiJgJAYXzUvkJ6n4Sw2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marcus\\Desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
+  "projectFilePath": "C:\\Users\\Marcus\\desktop\\SweetAndSavoury.Solution\\Patisserie\\Patisserie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcus\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Marcus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

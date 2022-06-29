@@ -5,18 +5,23 @@
 @using Patisserie.ViewModels
 @model RegisterViewModel
 
-<h2>Register a new user</h2>
-<hr />
-@using (Html.BeginForm("Register", "Account", FormMethod.Post))
-{
-  @Html.LabelFor(user => user.Email)
-  @Html.TextBoxFor(user=> user.Email)
+<div class="register-form columnized">
 
-  @Html.LabelFor(user=> user.Password)
-  @Html.PasswordFor(user=> user.Password)
+<h3>Register a new account</h3>
 
-  @Html.LabelFor(user=> user.ConfirmPassword)
-  @Html.PasswordFor(user=> user.ConfirmPassword)
+  @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "columnized" }))
+  {
+    @Html.LabelFor(user => user.Email)
+    @Html.TextBoxFor(user=> user.Email)
 
-  <input type="submit" value="Register" />
-}
+    @Html.LabelFor(user=> user.Password)
+    @Html.PasswordFor(user=> user.Password)
+
+    @Html.LabelFor(user=> user.ConfirmPassword)
+    @Html.PasswordFor(user=> user.ConfirmPassword)
+
+    <button type="submit" value="Register" class="btn centered"><h5>Submit</h5></button>
+  }
+
+
+</div>

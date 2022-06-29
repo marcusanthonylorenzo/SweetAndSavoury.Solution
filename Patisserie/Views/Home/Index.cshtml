@@ -2,8 +2,9 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div class="home text columnized">
+    <h2 class="">Welcome</h2>
+    <h4>Here are the flavours and food items in your recipe database.</h4>
 </div>
 @{
     Layout = "_Layout";
@@ -17,7 +18,9 @@
         
         <div class="home-content-flavours">
 
-            <ul><h2>View Flavours</h2>
+                    <button class="btn add">@Html.ActionLink("Add a new flavour", "Create", "Flavours")</button>
+
+            <ul><h2>Flavours</h2>
                 @foreach(Flavour flavour in ViewBag.Flavours)
                 {
                     <li>@Html.ActionLink($"{flavour.Name}", "Details", "Flavours", new { id = flavour.FlavourId })</li>
@@ -28,7 +31,9 @@
 
         <div class="home-content-treats">
 
-            <ul><h2>View Treats</h2>
+                    <button class="btn add">@Html.ActionLink("Add a new treat", "Create", "Treats")</button>
+
+            <ul><h2>Food Items</h2>
                 @foreach(Treat treat in ViewBag.Treats)
                 {
                     <li>@Html.ActionLink($"{treat.Name}", "Details", "Treats", new { id = treat.TreatId })</li>
@@ -41,17 +46,18 @@
     </section>
     
     <section class="home-content-innerfooter">
-        <p>@Html.ActionLink("Add a new flavour", "Create", "Flavours")</p>
-        <p>@Html.ActionLink("Add a new treat", "Create", "Treats")</p>
+       
+       
     </section>
 }
 else
 {
-
-    <h1>Please log-in or register to continue.</h1>
+    <div class="columnized" style="display: flex; margin-left: 5%;">
+        <h2>Please log-in or register to continue.</h2>
+    </div>
 
     <div class="spaceyboi-badNamingConvention" style="height: 3vh;"></div>
 
-    <p>@Html.ActionLink("Register", "Register", "Account")</p>
-    <p>@Html.ActionLink("Log in", "Login", "Account")</p>
+    <button class="btn">@Html.ActionLink("Register", "Register", "Account")</button>
+    <button class="btn">@Html.ActionLink("Log in", "Login", "Account")</button>
 }
