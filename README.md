@@ -1,4 +1,4 @@
-# Pierre's Patisserie: Sweet and Savoury Database.
+# Patisserie Inventory Website - A database of matching flavours and related food items.
 #### By _**Marcus Lorenzo**_
 ---
 
@@ -6,10 +6,14 @@
 | **_Overview_:** |
 |---|
 
-### User Auth required, Many-to-Many Tables in SQL database, entries list on webpage and can be CRUD individually.
+### Please see gif below for work flow.
+- UI is a work in progress, ideally with JavaScript.
+- User Authentication is required
+- Many-to-Many relationships in SQL database
+- Entries list on webpage and can be CRUD individually
 
 
-![Home-Page-Patiesserie-Database-Google-Chrome-2022-06-13-22-08-40 (1)](https://user-images.githubusercontent.com/100096239/173498907-2f1ab9c9-9366-4eba-8ef0-2552c59e0f78.gif)
+![ezgif com-gif-maker (11)](https://user-images.githubusercontent.com/100096239/176559207-7b8a4f3a-3459-4411-91f7-22e6d5f87f27.gif)
 
 
 #### Technologies Used:
