@@ -7,14 +7,12 @@
 |---|
 
 ### Please see gif below for work flow.
-- UI is a work in progress, ideally with JavaScript.
-- User Authentication is required
+- .NET Core MVC, Entity Framework Core, Razor Pages.
+- UI is a work in progress, a "cupcake and bubblegum" theme.
 - Many-to-Many relationships in SQL database
 - Entries list on webpage and can be CRUD individually
 
-
-![ezgif com-gif-maker (11)](https://user-images.githubusercontent.com/100096239/176559207-7b8a4f3a-3459-4411-91f7-22e6d5f87f27.gif)
-
+![- Patiesserie Database - Google Chrome 2022-07-01 22-59-03_Trim](https://user-images.githubusercontent.com/100096239/176988855-f882f82d-a8db-45ac-b40a-7838d3aa6387.gif)
 
 #### Technologies Used:
 ![image](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
